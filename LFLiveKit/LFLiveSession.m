@@ -121,6 +121,7 @@
     }
 }
 - (void)pushAudio:(nullable NSData*)audioData timeStamp: (uint64_t)timeStamp {
+    //for test only
     if(self.captureType & LFLiveInputMaskAudio){
         if (self.uploading) [self.audioEncoder encodeAudioData:audioData timeStamp:timeStamp];
     }
